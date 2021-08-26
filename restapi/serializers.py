@@ -39,14 +39,13 @@ class RegistrationSerializer(serializers.ModelSerializer):
         fields = ('id',
                   'username',
                   'email',
-                  'password'
+                  'password',
                   )
         model = Register
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:
         fields=(
             'id',
-            'customer_name',
             'name',
             'category',
             'price',
@@ -54,6 +53,8 @@ class ProductSerializer(serializers.ModelSerializer):
             'imageUrl',
             'status',
             'date_added',
+            'created',
+
 
         )
         model = Product

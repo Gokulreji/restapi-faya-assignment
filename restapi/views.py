@@ -28,7 +28,7 @@ class ListRegister(generics.ListCreateAPIView):
     serializer_class = RegistrationSerializer
 
 
-class DetialRegister(generics.RetrieveUpdateDestroyAPIView):
+class DetailRegister(generics.RetrieveUpdateDestroyAPIView):
     queryset = Register.objects.all()
     serializer_class = RegistrationSerializer
 
